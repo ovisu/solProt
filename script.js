@@ -1,17 +1,36 @@
-const conteudo = document.querySelector(".bg-conteudo");
+const bgconteudo = document.querySelector(".bg-conteudo");
+const conteudo = document.querySelector(".conteudo");
 const btn = document.querySelector(".slider-btn-container");
+const regras = document.querySelector(".regras");
 
-function esconde() {
-  conteudo.classList.toggle("esconde");
-  btn.classList.toggle("esconde");
+function fotos() {
+  btn.classList.remove("esconde");
+  bgconteudo.classList.add("esconde");
+  regras.classList.add("esconde");
+}
+function home() {
+  conteudo.classList.remove("esconde");
+  bgconteudo.classList.remove("esconde");
+  btn.classList.add("esconde");
+  regras.classList.add("esconde");
+}
+function regra() {
+  regras.classList.remove("esconde");
+  bgconteudo.classList.remove("esconde");
+  conteudo.classList.add("esconde");
+  btn.classList.add("esconde");
 }
 
 const slide = document.querySelector(".slide");
-const slideArray = document.querySelectorAll(".slide img");
+const slideArray = 6;
 let slideIndex = 1;
 moveSlide();
 
 function moveSlide() {
+  //impedindo q clicar mt rapido aumente o index alem do esperado e quebre o carousel
+  if (slideIndex > slideArray || slideIndex < 0) {
+    slideIndex = 1;
+  }
   slide.style.transform = `translateX(-${slideIndex * 100}%)`;
 }
 function moveHandler(direction) {
@@ -22,22 +41,31 @@ function moveHandler(direction) {
 
 document.querySelector(".slider-btn-right").addEventListener("click", () => {
   moveHandler("right");
+  console.log(slideArray);
 });
 document.querySelector(".slider-btn-left").addEventListener("click", () => {
   moveHandler();
-  console.log(slideIndex);
+  console.log(slideArray);
 });
 
 slide.addEventListener("transitionend", () => {
   if (slideIndex === 0) {
     slide.style.transition = "none";
-    slideIndex = slideArray.length - 2;
+    slideIndex = slideArray - 2;
     moveSlide();
   }
-  if (slideIndex === slideArray.length - 1) {
+  if (slideIndex === slideArray - 1) {
     slideIndex = 1;
     slide.style.transition = "none";
     moveSlide();
   }
 });
-console.log("vaitomarnocu");
+
+imagens = document.querySelector(
+  ".slide"
+).innerHTML = `<img src="./img/sol4.jfif" alt="">
+<img src="./img/sol.jfif" alt="">
+<img src="./img/sol2.jfif" alt="">
+<img src="./img/sol3.jfif" alt="">
+<img src="./img/sol4.jfif" alt="">
+<img src="./img/sol.jfif" alt="">`;

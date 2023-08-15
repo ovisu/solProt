@@ -75,7 +75,8 @@ header {
   width: 1000px;
   display: flex;
   flex-direction: row;
-  gap: 45px;
+  justify-content: space-between;
+  gap: 40px;
 }
 
 .container-menu ul {
@@ -117,13 +118,14 @@ a#alugue {
   display: flex;
   justify-content: center;
 }
-.esconde {
-  display: none;
-}
+
 .container {
   width: 1000px;
   display: flex;
   flex-direction: column;
+}
+.esconde {
+  display: none;
 }
 .conteudo h1 {
   font-family: Poppins;
@@ -137,4 +139,61 @@ a#alugue {
   color: white;
   font-size: 1.5rem;
   margin-top: 10px;
+}
+.regras h1 {
+  font-family: Poppins;
+  font-size: 2.5rem;
+  color: white;
+  line-height: 1.5;
+  font-weight: 400;
+  margin: 40px 0px 0px 0px;
+}
+
+.regras li::before {
+  content: "";
+  width: 8px;
+  height: 4px;
+  display: block;
+  position: absolute;
+  background-color: #1cfa08;
+  top: 9px;
+  left: -20px;
+}
+.regras li {
+  color: white;
+  font-size: 1.125rem;
+  font-weight: 500;
+  margin: 0px;
+  border: 0px;
+  list-style: none;
+  position: relative;
+}
+.regras div ul {
+  padding: 20px;
+  margin: 0px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.regra-btn {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  gap: 20px;
+}
+
+button {
+  width: 15px;
+  height: 15px;
+  border: none;
+  border-radius: 10px;
+  background-color: #90c6a6;
+}
+.btn-ativo {
+  width: 20px;
+  height: 20px;
+  background-color: #00ff66;
 }

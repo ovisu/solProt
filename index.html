@@ -10,22 +10,23 @@
 </head>
 
 <body>
+	<!--div container/fundo-->
 	<div class="bg-body">
 		<header>
 			<div class="container-menu">
 				<img src="./img/logo.jpg" id="logo">
 				<ul>
-					<li>HOME</li>
-					<li onclick="esconde()">FOTOS</li>
-					<li>REGRAS</li>
+					<li onclick="home()">HOME</li>
+					<li onclick="fotos()">FOTOS</li>
+					<li onclick="regra()">REGRAS</li>
 					<li>CONTATO</li>
-					<li id=" alugue">ALUGUE JÁ</li>
+
 				</ul>
 			</div>
 		</header>
-
+		<!--pag inicial-->
 		<section class="bg-conteudo">
-			<section class="conteudo container">
+			<section class="conteudo container ">
 				<h1>Bem-vindo ao Condomínio<br>
 					Sol das Caldas.</h1>
 				<p>O Sol das Caldas é um empreendimento que<br>
@@ -36,21 +37,34 @@
 				<a href="#" id="alugue">ALUGUE JÁ</a>
 
 			</section>
+			<section class="regras container esconde">
+				<h1>O que saber na hora<br>
+					do Check-In?</h1>
+				<div>
+					<ul>
+						<li>O máximo de ocupantes por apartamento são <br> 7 (sete) pessoas independente da idade com 1 criança de até 05 isenta da contagem ( há uma exceção para 1 excedente (somente criança de <br>até 12 anos(CHD) mediante pagamento de R$ 30,00 a diária ) - NÃO É PERMITIDO ADICIONAL <br>DE ADULTO.</li>
+						<li>O máximo de ocupantes por apartamento são 7 (sete) pessoas independente da idade com 1 criança de até 05 isenta da contagem ( há uma exceção para 1 excedente (somente criança de até 12 anos(CHD) mediante pagamento de R$ 30,00 a diária ) - NÃO É PERMITIDO ADICIONAL DE ADULTO.</li>
+						<li>Para a criança que viaja desacompanhada dos responsáveis legais é obrigatório apresentar no <br>ato do check-in uma autorização do responsável registrada em cartório, permitindo a hospedagem do menor. LEI Nº8.069/1990 ART. 82.</li>
+
+						<li>Para a criança que viaja desacompanhada dos responsáveis legais é obrigatório apresentar no <br>ato do check-in uma autorização do responsável registrada em cartório, permitindo a hospedagem do menor. LEI Nº8.069/1990 ART. 82.</li>
+					</ul>
+					<div class="regra-btn">
+						<button class="btn-ativo"></button>
+						<button></button>
+					</div>
+				</div>
+
+			</section>
 
 
 		</section>
-
+		<!--container botoes-->
 		<div class="slider-btn-container esconde">
 			<button class="slider-btn slider-btn-left"><img src="./img/arrow-left.svg" alt=""></button>
 			<button class="slider-btn slider-btn-right"> <img src="./img/arrow-right.svg" alt=""></button>
 		</div>
 		<div class="slide">
-			<img src="./img/sol4.jfif" alt="">
-			<img src="./img/sol.jfif" alt="">
-			<img src="./img/sol2.jfif" alt="">
-			<img src="./img/sol3.jfif" alt="">
-			<img src="./img/sol4.jfif" alt="">
-			<img src="./img/sol.jfif" alt="">
+
 
 		</div>
 
