@@ -2,6 +2,10 @@ const bgconteudo = document.querySelector(".bg-conteudo");
 const conteudo = document.querySelector(".conteudo");
 const btn = document.querySelector(".slider-btn-container");
 const regras = document.querySelector(".regras");
+const regrasCheck = document.querySelector(".regras-check");
+const checkBtn = document.querySelector(".check-btn")
+const regrasCond = document.querySelector(".regras-cond")
+const condBtn = document.querySelector(".cond-btn")
 
 function fotos() {
   btn.classList.remove("esconde");
@@ -19,6 +23,24 @@ function regra() {
   bgconteudo.classList.remove("esconde");
   conteudo.classList.add("esconde");
   btn.classList.add("esconde");
+}
+
+function regrasCheckIn() {
+
+  regrasCheck.classList.remove("esconde");
+  regrasCond.classList.add("esconde");
+  checkBtn.classList.add("btn-ativo");
+  condBtn.classList.remove("btn-ativo")
+
+}
+function regrasCondominio() {
+
+
+  regrasCheck.classList.add("esconde");
+  regrasCond.classList.remove("esconde");
+  checkBtn.classList.remove("btn-ativo");
+  condBtn.classList.add("btn-ativo")
+
 }
 
 const slide = document.querySelector(".slide");
