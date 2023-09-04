@@ -365,6 +365,10 @@ button {
 .esconde {
   display: none;
 }
+#esconde {
+  display: hidden;
+}
+
 
 #cont-titulo {
   position: absolute;
