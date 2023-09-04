@@ -11,15 +11,15 @@
 
 <body>
 	<!--div container/fundo-->
-	<div class="bg-body">
+	<div id="bg-body">
 		<header>
 			<div class="container-menu">
 				<img src="./img/logo.jpg" id="logo">
 				<ul>
-					<li onclick="home()">HOME</li>
-					<li onclick="fotos()">FOTOS</li>
-					<li onclick="regra()">REGRAS</li>
-					<li><a href="cont.html">CONTATO</a></li>
+					<li onclick="home()" id="home" class="header-ativo">HOME</li>
+					<li onclick="fotos()" id="fotos">FOTOS</li>
+					<li onclick="regra()" id="regras">REGRAS</li>
+					<li><a href="cont.html" id="cont">CONTATO</a></li>
 
 				</ul>
 			</div>
@@ -27,12 +27,12 @@
 		<!--pag inicial-->
 		<section class="bg-conteudo">
 			<section class="conteudo container ">
-				<h1>Bem-vindo ao Condomínio<br>
+				<h1>Bem<span class="dest">-</span>ao Condomínio<br>
 					Sol das Caldas.</h1>
 				<p>O Sol das Caldas é um empreendimento que<br>
 					possui apartamentos que acomodam até 07<br>
 					pessoas. A locação dos apartamentos é feita<br>
-					através de seus proprietários e/ou imobiliária.</p>
+					através de seus proprietários e<span class="dest">/</span>imobiliária<span class="dest">.</span></p>
 
 				<a href="#" id="alugue">ALUGUE JÁ</a>
 
@@ -43,11 +43,11 @@
 						do Check-In?</h1>
 					<div>
 						<ul>
-							<li>O máximo de ocupantes por apartamento são <br> 7 (sete) pessoas independente da idade com 1 criança de até 05 isenta da contagem ( há uma exceção para 1 excedente (somente criança de <br>até 12 anos(CHD) mediante pagamento de R$ 30,00 a diária ) - NÃO É PERMITIDO ADICIONAL <br>DE ADULTO.</li>
-							<li>O máximo de ocupantes por apartamento são 7 (sete) pessoas independente da idade com 1 criança de até 05 isenta da contagem ( há uma exceção para 1 excedente (somente criança de até 12 anos(CHD) mediante pagamento de R$ 30,00 a diária ) - NÃO É PERMITIDO ADICIONAL DE ADULTO.</li>
-							<li>Para a criança que viaja desacompanhada dos responsáveis legais é obrigatório apresentar no <br>ato do check-in uma autorização do responsável registrada em cartório, permitindo a hospedagem do menor. LEI Nº8.069/1990 ART. 82.</li>
-						
-							<li>Para a criança que viaja desacompanhada dos responsáveis legais é obrigatório apresentar no <br>ato do check-in uma autorização do responsável registrada em cartório, permitindo a hospedagem do menor. LEI Nº8.069/1990 ART. 82.</li>
+							<li>O máximo de ocupantes por apartamento são <br> 7 (sete) pessoas independente da idade com 1 criança de até 05 isenta da contagem ( há uma exceção para 1 excedente (somente criança de <br>até 12 anos(CHD) mediante pagamento de R$ 30,00 a diária ) <span class="dest">-</span> NÃO É PERMITIDO ADICIONAL <br>DE ADULTO<span class="dest">.</span></li>
+							<li>O máximo de ocupantes por apartamento são <br> 7 (sete) pessoas independente da idade com 1 criança de até 05 isenta da contagem ( há uma exceção para 1 excedente (somente criança de<br> até 12 anos(CHD) mediante pagamento de R$ 30,00 a diária ) <span class="dest">-</span> NÃO É PERMITIDO ADICIONAL<br> DE ADULTO<span class="dest">.</span></li>
+							<li>Para a criança que viaja desacompanhada dos responsáveis legais é obrigatório apresentar no <br>ato do check <span class="dest">-</span> uma autorização do responsável registrada em cartório, permitindo a hospedagem do menor. LEI Nº8.069<span class="dest">/</span>1990 ART.</span> 82<span class="dest">.</span></li>
+
+							<li>Para a criança que viaja desacompanhada dos responsáveis legais é obrigatório apresentar no <br>ato do check <span class="dest">-</span> uma autorização do responsável registrada em cartório, permitindo a hospedagem do menor. LEI Nº8.069<span class="dest">/</span>1990 ART.</span> 82<span class="dest">.</span></li>
 						</ul>
 					</div>
 				</div>
@@ -55,19 +55,19 @@
 					<h1>Regras do Condomínio</h1><br><br><br>
 					<div>
 						<ul>
-							<li>O máximo de ocupantes por apartamento são <br> 7 (sete) pessoas independente da idade com 1 criança de até 05 isenta da contagem ( há uma exceção para 1 excedente (somente criança de <br>até 12 anos(CHD) mediante pagamento de R$ 30,00 a diária ) - NÃO É PERMITIDO ADICIONAL <br>DE ADULTO.</li>
-							<li>O máximo de ocupantes por apartamento são 7 (sete) pessoas independente da idade com 1 criança de até 05 isenta da contagem ( há uma exceção para 1 excedente (somente criança de até 12 anos(CHD) mediante pagamento de R$ 30,00 a diária ) - NÃO É PERMITIDO ADICIONAL DE ADULTO.</li>
-							<li>Para a criança que viaja desacompanhada dos responsáveis legais é obrigatório apresentar no <br>ato do check-in uma autorização do responsável registrada em cartório, permitindo a hospedagem do menor. LEI Nº8.069/1990 ART. 82.</li>
-						
-							<li>Para a criança que viaja desacompanhada dos responsáveis legais é obrigatório apresentar no <br>ato do check-in uma autorização do responsável registrada em cartório, permitindo a hospedagem do menor. LEI Nº8.069/1990 ART. 82.</li>
+							<li>O máximo de ocupantes por apartamento são <br> 7 (sete) pessoas independente da idade com 1 criança de até 05 isenta da contagem ( há uma exceção para 1 excedente (somente criança de <br>até 12 anos(CHD) mediante pagamento de R$ 30,00 a diária ) <span class="dest">-</span> NÃO É PERMITIDO ADICIONAL <br>DE ADULTO<span class="dest">.</span></li>
+							<li>O máximo de ocupantes por apartamento são <br> 7 (sete) pessoas independente da idade com 1 criança de até 05 isenta da contagem ( há uma exceção para 1 excedente (somente criança de <br>até 12 anos(CHD) mediante pagamento de R$ 30,00 a diária ) <span class="dest">-</span> NÃO É PERMITIDO ADICIONAL <br>DE ADULTO<span class="dest">.</span></li>
+							<li>Para a criança que viaja desacompanhada dos responsáveis legais é obrigatório apresentar no <br>ato do check <span class="dest">-</span> uma autorização do responsável registrada em cartório, permitindo a hospedagem do menor. LEI Nº8.069<span class="dest">/</span>1990 ART.</span> 82<span class="dest">.</span></li>
+
+							<li>Para a criança que viaja desacompanhada dos responsáveis legais é obrigatório apresentar no <br>ato do check <span class="dest">-</span> uma autorização do responsável registrada em cartório, permitindo a hospedagem do menor. LEI Nº8.069<span class="dest">/</span>1990 ART.</span> 82<span class="dest">.</span></li>
 						</ul>
-					</div>	
+					</div>
 				</div>
 				<div class="regra-btn">
-						<button class="check-btn btn-ativo" onclick="regrasCheckIn()"></button>
-						<button class="cond-btn" onclick="regrasCondominio()"></button>
+					<button class="check-btn btn-ativo" onclick="regrasCheckIn()"></button>
+					<button class="cond-btn" onclick="regrasCondominio()"></button>
 				</div>
-				
+
 
 			</section>
 

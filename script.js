@@ -3,44 +3,54 @@ const conteudo = document.querySelector(".conteudo");
 const btn = document.querySelector(".slider-btn-container");
 const regras = document.querySelector(".regras");
 const regrasCheck = document.querySelector(".regras-check");
-const checkBtn = document.querySelector(".check-btn")
-const regrasCond = document.querySelector(".regras-cond")
-const condBtn = document.querySelector(".cond-btn")
-
+const checkBtn = document.querySelector(".check-btn");
+const regrasCond = document.querySelector(".regras-cond");
+const condBtn = document.querySelector(".cond-btn");
+const fotoText = document.getElementById("fotos");
+const homeText = document.getElementById("home");
+const regraText = document.getElementById("regras");
+console.log(fotoText);
 function fotos() {
   btn.classList.remove("esconde");
   bgconteudo.classList.add("esconde");
   regras.classList.add("esconde");
+
+  fotoText.classList.add("header-ativo");
+  homeText.classList.remove("header-ativo");
+  regraText.classList.remove("header-ativo");
 }
 function home() {
   conteudo.classList.remove("esconde");
   bgconteudo.classList.remove("esconde");
   btn.classList.add("esconde");
   regras.classList.add("esconde");
+
+  fotoText.classList.remove("header-ativo");
+  homeText.classList.add("header-ativo");
+  regraText.classList.remove("header-ativo");
 }
 function regra() {
   regras.classList.remove("esconde");
   bgconteudo.classList.remove("esconde");
   conteudo.classList.add("esconde");
   btn.classList.add("esconde");
+
+  fotoText.classList.remove("header-ativo");
+  homeText.classList.remove("header-ativo");
+  regraText.classList.add("header-ativo");
 }
 
 function regrasCheckIn() {
-
   regrasCheck.classList.remove("esconde");
   regrasCond.classList.add("esconde");
   checkBtn.classList.add("btn-ativo");
-  condBtn.classList.remove("btn-ativo")
-
+  condBtn.classList.remove("btn-ativo");
 }
 function regrasCondominio() {
-
-
   regrasCheck.classList.add("esconde");
   regrasCond.classList.remove("esconde");
   checkBtn.classList.remove("btn-ativo");
-  condBtn.classList.add("btn-ativo")
-
+  condBtn.classList.add("btn-ativo");
 }
 
 const slide = document.querySelector(".slide");
