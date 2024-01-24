@@ -1,0 +1,384 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+@property --gradient-gira {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+@keyframes gira {
+  0% {
+    --gradient-gira: 0deg;
+  }
+  100% {
+    --gradient-gira: 360deg;
+  }
+}
+
+body {
+  margin: 0px;
+  font-family: Montserrat;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+a {
+  text-decoration: none;
+}
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  color: #f8fff1;
+  backdrop-filter: blur(5px);
+  background-color: rgba(43, 66, 39, 0.6);
+}
+
+li img {
+  width: 30px;
+}
+
+#bg-body {
+  height: 100vh;
+  max-width: 100vw;
+  position: relative;
+  overflow: hidden;
+}
+
+.slider-btn-container {
+  position: absolute;
+  margin: 0;
+  top: 50%;
+  width: 100vw;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slider-btn {
+  border-radius: 50%;
+  position: absolute;
+  padding: 0.2rem;
+  cursor: pointer;
+  display: block;
+  background: transparent;
+  border: 0px;
+  width: fit-content;
+  height: fit-content;
+}
+.slider-btn img {
+  width: 40px;
+}
+.slider-btn-left {
+  left: 80px;
+}
+.slider-btn-right {
+  right: 80px;
+}
+.slide {
+  display: flex;
+  max-width: 100vw;
+  position: absolute;
+  top: 0;
+  z-index: -2;
+}
+.slide img {
+  top: 0px;
+  flex: 1 0 100%;
+  max-height: 100vh;
+  z-index: -2;
+}
+#logo {
+  width: 70px;
+  height: 50px;
+}
+
+.container-menu {
+  width: 1000px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.container-menu ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 60px;
+}
+.container-menu ul li {
+  font-size: 1.125rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.container-menu ul li a {
+  color: #f8fff1;
+}
+
+#alugue {
+  margin-left: 200px;
+  margin-bottom: 3px;
+  background-color: #20bc06;
+  color: #f8fff1;
+  padding: 10px 20px 10px 20px;
+  border-radius: 30px;
+  width: 110px;
+}
+
+a#alugue {
+  margin-top: 50px;
+  margin-left: 0px;
+  font-weight: 600;
+  font-size: 1.3rem;
+  width: 125px;
+}
+
+.bg-conteudo {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(2px);
+  display: flex;
+  justify-content: center;
+  overflow-y: hidden;
+}
+
+.container {
+  width: 1000px;
+  display: flex;
+  flex-direction: column;
+}
+
+.conteudo h1 {
+  font-family: Poppins;
+  font-size: 2.5rem;
+  color: white;
+  font-weight: 400;
+  margin-top: 65px;
+}
+
+.conteudo p {
+  color: white;
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+.regras h1 {
+  font-family: Poppins;
+  font-size: 2.5rem;
+  color: white;
+  line-height: 1.5;
+  font-weight: 400;
+  margin: 40px 0px 0px 0px;
+}
+
+.regras li::before {
+  content: "";
+  width: 8px;
+  height: 4px;
+  display: block;
+  position: absolute;
+  background-color: #1cfa08;
+  top: 9px;
+  left: -20px;
+}
+.regras li {
+  color: white;
+  font-size: 1.125rem;
+  font-weight: 500;
+  margin: 0px;
+  border: 0px;
+  list-style: none;
+  position: relative;
+}
+.regras div ul {
+  padding: 20px;
+  margin: 0px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.regra-btn {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 30px;
+  gap: 20px;
+}
+
+button {
+  width: 15px;
+  height: 15px;
+  border: none;
+  border-radius: 10px;
+  background-color: #90c6a6;
+  cursor: pointer;
+}
+.btn-ativo {
+  width: 20px;
+  height: 20px;
+  background-color: #00ff66;
+  transition: ease-in-out 300ms;
+}
+.regras-cond {
+  margin-top: 3px;
+}
+
+.container-contato {
+  width: 1000px;
+}
+.contato {
+  background-color: rgba(57, 94, 44, 0.3);
+}
+.contato-bg {
+  background-color: #0f140f;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+#return {
+  gap: 5px;
+}
+.container-menu a {
+  color: white;
+}
+
+#return img {
+  margin-top: 3px;
+}
+
+#grid {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-right: 50px;
+  display: grid;
+  grid-template-columns: repeat(5, 230px);
+  grid-template-rows: repeat(3, 140px);
+
+  row-gap: 30px;
+  column-gap: 100px;
+  width: inherit;
+  overflow-x: scroll;
+  position: relative;
+}
+
+::-webkit-scrollbar {
+  width: 100px;
+  height: 10px;
+  background-color: #779977;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #3d5c3d;
+  width: 30px;
+}
+
+.card {
+  background: #182818;
+  padding: 12px;
+  border-radius: 5px 5px 5px 5px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.card::before,
+.card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: conic-gradient(
+    from var(--gradient-gira),
+    #4e9841,
+    #2a7135,
+    #07552b,
+    #2a7135,
+    #4e9841
+  );
+  animation: gira 10s linear infinite;
+  border-radius: inherit;
+  transition: inset 100ms;
+}
+.card:hover::before,
+.card:hover::after {
+  inset: -0.2rem;
+  transition: 300ms ease-in-out;
+}
+.card::after {
+  filter: blur(4px);
+}
+.card {
+  background: #182818;
+}
+.card p {
+  margin: 0px;
+  color: #fff;
+}
+.card p:first-child {
+  margin-top: 30px;
+  color: #fff;
+}
+
+.card span {
+  position: absolute;
+  bottom: 15px;
+  align-self: center;
+  display: block;
+  color: white;
+}
+
+.dest {
+  color: #26e208;
+}
+
+.header-ativo {
+  color: #1ab201;
+}
+
+#home:hover {
+  transition: ease-in-out 300ms;
+  color: #1ab201;
+}
+#fotos:hover {
+  transition: ease-in-out 300ms;
+  color: #1ab201;
+}
+#regras:hover {
+  transition: ease-in-out 300ms;
+  color: #1ab201;
+}
+#cont:hover {
+  transition: ease-in-out 300ms;
+  color: #1ab201;
+}
+.esconde {
+  display: none;
+}
+#esconde {
+  display: hidden;
+}
+
+
+#cont-titulo {
+  position: absolute;
+  color: #fff;
+  background-color: #0f140f;
+  padding: 30px;
+  padding-right: 50px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  font-size: 2rem;
+  top: -15px;
+  z-index: 999;
+}
